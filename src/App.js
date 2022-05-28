@@ -40,7 +40,11 @@ const App = ()=>{
           </div>
 
           <div>
-            <img src={movie2.Poster} alt={movie2.Title}/>
+            <img src={movie2.Poster !== 'N/A' ? movie2.Poster : 'http://via.placeholder.com/400'} alt={movie2.Title}/>
+          </div>
+          <div>
+            <span>{movie2.Type}</span>
+            <h3>{movie2.Title}</h3>
           </div>
         </div>
       </div>
