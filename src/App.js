@@ -34,7 +34,7 @@ const App = ()=>{
     <div className='search'>
       <input placeholder="What do you want to watch?" value={searchTerm} onChange={(e)=>setSearchTerm(e.target.value)}
         />
-        <img src={SearchIcon} alt="search" onClick={()=>{}}/>
+        <img src={SearchIcon} alt="search" onClick={()=>searchMovies(searchTerm)}/>
       </div>
       {movies?.length > 0
         ? (
